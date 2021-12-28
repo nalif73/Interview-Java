@@ -1,0 +1,9 @@
+
+У полей класса Car разные модификаторы доступа. Надо все сделать приватными.  Если оно публичное, геттеры и сеттеры зачем тогда.
+
+Метод start() - protected, логичнее было бы сделать его public думаю.
+
+Непонятно, почему метод open() - abstract, а метод start() нет.
+
+Запись Lorry extends Car, Moveable, Stopable - неправильна, правильно Lorry extends Car, implements Moveable, Stopable.
+В классе Lorry нет аннотаций @Override,  не переопределен метод open().
